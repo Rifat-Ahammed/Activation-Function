@@ -7,11 +7,11 @@ Objective:
 3. The objective is to examine the attributes and consequences of using the Activation Function
 inside neural networks.<br />
 
-1. Theoretical Understanding:
+## Theoretical Understanding:
   o Explain the Activation Function, including its equation and graph.
   o Discuss why activation functions are used in neural networks, focusing on the role of the
    Activation function.
-2. Mathematical Exploration:
+## Mathematical Exploration:
   o Derive the Activation function formula and demonstrate its output range.
   o Calculate the derivative of the Activation function and explain its significance in the
 backpropagation process.
