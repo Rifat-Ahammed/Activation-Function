@@ -10,7 +10,8 @@ inside neural networks.<br />
 
 ## Theoretical Understanding:
   o Explain the Activation Function, including its equation and graph.<br/>
-  1. Activation fucntion: [image](https://github.com/Rifat-Ahammed/Activation-Function/assets/96107279/afc9e9ac-fd30-45a9-928a-0d9ca0f374f7)
+  1. Activation fucntion:
+     ![image](https://github.com/Rifat-Ahammed/Activation-Function/assets/96107279/afc9e9ac-fd30-45a9-928a-0d9ca0f374f7)
 <br/>
 
   o Discuss why activation functions are used in neural networks, focusing on the role of the
