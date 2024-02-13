@@ -1,6 +1,6 @@
 # Activation-Function (Assignment_01) for Deep Learning
 Rifat_Assignment_01: Understanding and implementing the activation function.<br/>
-Throughout this article we will learn about Activation Functions with real life example and we will also get answer that why they are needed and what their types.
+Throughout this article we will learn about Activation Functions with real life example and also get answer that why they are needed and what their types.
 
 Objective:
 1. To comprehend the conceptual and mathematics underpinnings of the Activation Function.
@@ -10,6 +10,7 @@ inside neural networks.<br />
 
 ## Theoretical Understanding:
   o Explain the Activation Function, including its equation and graph.<br/>
+  1. Activation fucntion: 
   o Discuss why activation functions are used in neural networks, focusing on the role of the
    Activation function.<br/>
 ## Mathematical Exploration:
