@@ -1,5 +1,5 @@
 # Activation-Function (Assignment_01) for Deep Learning
-Rifat_Assignment_01: Understanding and implementing the activation function. 
+Rifat_Assignment_01: Understanding and implementing the activation function.<br/>
 Throughout this article we will learn about Activation Functions with real life example and we will also get answer that why they are needed and what their types.
 
 Objective:
