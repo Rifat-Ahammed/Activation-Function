@@ -9,10 +9,10 @@ Objective:
 inside neural networks.<br />
 
 ## Theoretical Understanding:
-  o Explain the Activation Function, including its equation and graph.
+  o Explain the Activation Function, including its equation and graph.<br/>
   o Discuss why activation functions are used in neural networks, focusing on the role of the
-   Activation function.
+   Activation function.<br/>
 ## Mathematical Exploration:
-  o Derive the Activation function formula and demonstrate its output range.
+  o Derive the Activation function formula and demonstrate its output range.<br/>
   o Calculate the derivative of the Activation function and explain its significance in the
-backpropagation process.
+backpropagation process.<br/>
