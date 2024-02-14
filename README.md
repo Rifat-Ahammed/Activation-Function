@@ -8,7 +8,7 @@ Throughout this article we will learn about Activation Functions with real life 
 3. The objective is to examine the attributes and consequences of using the Activation Function
 inside neural networks.<br /> 
 
-## Theoretical Understanding:
+## 1. Theoretical Understanding:
   ### o Explain the Activation Function, including its equation and graph.<br/>
   ### Activation fucntion: 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image.png)<br/>
@@ -36,7 +36,7 @@ inside neural networks.<br />
   4. **Non-monotonic functions:**  Certain activation functions are non-monotonic, which means that they introduce local maxima and minima in the output of the neuron. This can help to prevent the network from getting stuck in local optima during training and improve its ability to find the global optimum.<br/>
 
 
-  ## Mathematical Exploration:<br/>
+## 2. Mathematical Exploration:<br/>
 
   ### o Derive the Activation function formula and demonstrate its output range.<br/>
   The primary role of the Activation Function is to transform the summed weighted input from the node into an output value to be fed to the next hidden layer or as output. 
@@ -59,21 +59,39 @@ inside neural networks.<br />
   **let’s understand what these derivatives are and how to calculate them:**<br/>
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-5.png)<br/>
 
-  **1. Input layer**: Now from the image above, we can take raw input.
-  Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs w1, w2,...,wn
-  and produces an output z. Let's denote the weighted sum of inputs as b and the output of the activation function as a.
+  **1. Input layer**:<br/>
+    Now from the image above, we can take raw input.Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs i.e. i1, i2,...,in and produces an output z.
 
-  **Hidden layer i.e. layer 1:** <br/>
-  **z(1) = W(1)X + b(1) a(1)**
+  **Hidden layer (layer 1):** <br/>
 
-  Here,
-  **z(1)** is the vectorized output of layer 1<br/>
-  **W(1)** be the vectorized weights assigned to neurons of hidden layer i.e. w1, w2, w3 and w4<br/>
-  **X** be the vectorized input features i.e. i1 and i2<br/>
-  **b** is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2<br/>
-  **a(1)** is the vectorized form of any linear function.<br/>
+    z(1) = W(1)X + b(1) a(1)
+    Here,
+    z(1) is the vectorized output of layer 1
+    W(1) be the vectorized weight assigned to neurons of hidden layer i.e. w1, w2, w3 and w4
+    X be the vectorized input features i.e. i1 and i2
+    b is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2
+    a(1) is the vectorized form of any linear function.<br/>
 
+  **Output layer (layer 2):**<br/>
 
+  Note : Input for layer 2 is output from layer 1.<br/>
+  
+    z(2) = W(2)a(1) + b(2) 
+    a(2) = z(2)
+
+**Calculation at Output layer:**<br/>
+
+    z(2) = (W(2) * [W(1)X + b(1)]) + b(2)
+    z(2) = [W(2) * W(1)] * X + [W(2)*b(1) + b(2)]
+
+Let, 
+
+    [W(2) * W(1)] = W
+
+    [W(2)*b(1) + b(2)] = b
+
+    Final output : z(2) = W*X + b
+    which is again a linear function
 
   o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.<br/>
   ### Different kind of activation functions:
