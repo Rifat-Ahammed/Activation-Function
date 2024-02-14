@@ -146,7 +146,7 @@ Let,
   
     -1 to +1
 
-  **Nature :** non-linear<br/>
+  **Nature :** Non-linear<br/>
 
   **Uses :** Usually used in hidden layers of a neural network as it’s values lies between -1 to 1 hence the mean for the hidden layer comes out be 0 or very close to it, hence helps in centering the data by bringing mean close to 0. This makes learning for the next layer much easier.<br/>
 
@@ -165,7 +165,7 @@ Let,
     
      [0, inf)
 
-  **Nature :** non-linear, which means we can easily backpropagate the errors and have multiple layers of neurons being activated by the ReLU function.<br/>
+  **Nature :** Non-linear, which means we can easily backpropagate the errors and have multiple layers of neurons being activated by the ReLU function.<br/>
 
   **Uses :** ReLu is less computationally expensive than tanh and sigmoid because it involves simpler mathematical operations. At a time only a few neurons are activated making the network sparse making it efficient and easy for computation.<br/>
 
@@ -180,11 +180,28 @@ Let,
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/softmax1.PNG)<br/>
 
 
-  **Nature :** non-linear<br/>
+  **Nature :** Non-linear<br/>
 
   **Uses :** Usually used when trying to handle multiple classes. the softmax function was commonly found in the output layer of image classification problems.The softmax function would squeeze the outputs for each class between 0 and 1 and would also divide by the sum of the outputs.<br/> 
 
   **Output:** The softmax function is ideally used in the output layer of the classifier where we are actually trying to attain the probabilities to define the class of each input.<br/>
+
+  **6. Leaky ReLU:** 
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/leaky RELU.png)<br/>
+
+  A type of activation function based on a ReLU, but it has a small slope for negative values instead of a flat slope. The slope coefficient is determined before training, i.e. it is not learnt during training.<br/>
+
+  **Equation:**
+
+      f(x)=max(0.01*x , x)
+  
+  **Nature :** linear<br/>
+
+  **Range:**
+
+      (-inf to inf)
+
+  **Uses:** Leaky ReLU is an activation function used in artificial neural networks to introduce nonlinearity among the outputs between layers of a neural network.<br/>
 
   **Note:**
 
@@ -196,7 +213,7 @@ Let,
 
 
 
-  5. **Leaky ReLU:** It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).<br/>
+  
   6. **Swish:** Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).<br/>
 
 
