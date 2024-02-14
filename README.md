@@ -187,7 +187,7 @@ Let,
   **Output:** The softmax function is ideally used in the output layer of the classifier where we are actually trying to attain the probabilities to define the class of each input.<br/>
 
   **6. Leaky ReLU:** 
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/leaky RELU.png)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/leaky_RELU.png)<br/>
 
   A type of activation function based on a ReLU, but it has a small slope for negative values instead of a flat slope. The slope coefficient is determined before training, i.e. it is not learnt during training.<br/>
 
