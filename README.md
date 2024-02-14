@@ -11,7 +11,7 @@ inside neural networks.<br />
 ## Theoretical Understanding:
   o Explain the Activation Function, including its equation and graph.<br/>
   1. Activation fucntion: 
-  <br/>https://github.com/Rifat-Ahammed/Activation-Function
+  <br/>![alt text](image.png)
 <br/>
 
   o Discuss why activation functions are used in neural networks, focusing on the role of the
