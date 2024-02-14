@@ -18,8 +18,7 @@ inside neural networks.<br />
   ### Equation:
     An activation function is typically represented by a function f(x) where x is the input
     to the neuron. Different activation functions have different equations. One commonly
-    used activation function is the sigmoid function: 
-    <br/>![alt text](image-1.png)
+    used activation function is the sigmoid function: ![alt text](image-1.png)
 
 
 <br/>
