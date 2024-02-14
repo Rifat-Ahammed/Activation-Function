@@ -134,7 +134,7 @@ Let,
   **Uses:** Usually used in output layer of a binary classification, where result is either 0 or 1, as value for sigmoid function lies between 0 and 1 only so, result can be predicted easily to be 1 if value is greater than 0.5 and 0 otherwise.<br/>
 
   **3. Tanh Function:**
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image8.png)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh.PNG)<br/>
 
   The activation that works almost always better than sigmoid function is Tanh function also known as Tangent Hyperbolic function. It’s actually mathematically shifted version of the sigmoid function. Both are similar and can be derived from each other.
 
