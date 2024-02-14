@@ -21,6 +21,13 @@ inside neural networks.<br />
   used activation function is the sigmoid function: 
   <br/>![alt text](image-1.png)
 
+  ### Graph:
+  The Sigmoid Function curve looks like a S-shape:
+  <br/>![alt text](image-2.png)
+  <br/>
+
+  ### o Discuss why activation functions are used in neural networks, focusing on the role of the Activation function.<br/>
+
   ### Different kind of activation functions:
 
   <br/>There are several commonly used activation functions in neural networks, including:<br/>
@@ -35,7 +42,6 @@ inside neural networks.<br />
 
 <br/>
 
-  ### o Discuss why activation functions are used in neural networks, focusing on the role of the Activation function.<br/>
 ## Mathematical Exploration:
   o Derive the Activation function formula and demonstrate its output range.<br/>
   o Calculate the derivative of the Activation function and explain its significance in the
