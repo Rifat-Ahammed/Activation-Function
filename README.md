@@ -87,16 +87,25 @@ inside neural networks.<br />
 Let, 
 
     [W(2) * W(1)] = W
-
     [W(2)*b(1) + b(2)] = b
 
     Final output : z(2) = W*X + b
     which is again a linear function
 
   o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.<br/>
-  ### Different kind of activation functions:
+  ### Different kind of activation functions and their output ranges:
 
   <br/>There are several commonly used activation functions in neural networks, including:<br/>
+
+  **1. Linear Function**
+
+  <br/>**Equation:** Linear function has the equation similar to as of a straight line i.e. y = x.<br/>
+  No matter how many layers we have, if all are linear in nature, the final activation function of last layer is nothing but just a linear function of the input of first layer.
+  **Range:** -inf to +inf.<br/>
+  **Uses:** Linear activation function is used at just one place i.e. output layer.<br/>
+  **Issues:** If we will differentiate linear function to bring non-linearity, result will no more depend on input “x” and function will become constant, it won’t introduce any ground-breaking behavior to our algorithm.<br/>
+  ![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image6.png)<br/>
+
 
   1. **Sigmoid:** A sigmoid activation function maps any input to the range of 0 and 1, producing an output that can be interpreted as a probability.<br/>
   2. **ReLU (Rectified Linear Unit):** The ReLU activation function sets any negative input to 0 and retains positive inputs unchanged. This function has become widely popular in deep learning due to its computational efficiency and ability to avoid the vanishing gradient problem.<br/>
