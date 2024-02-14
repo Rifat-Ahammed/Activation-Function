@@ -11,7 +11,7 @@ inside neural networks.<br />
 ## Theoretical Understanding:
   ### o Explain the Activation Function, including its equation and graph.<br/>
   ### Activation fucntion: 
-  <br/>![added images](C:\Users\Rifat\Documents\Data science\Deep Learning\Activation\Function\Activation-Function\images\img.PNG)<br/>
+  <br/>![added images](images\image.PNG)<br/>
   An activation function in a neural network is a mathematical function applied to the output of a neuron or a layer of neurons. It determines the output or activation level of a neuron based on the weighted sum of its inputs.<br/>
   The purpose of an activation function is to introduce non-linear transformations to the network’s computations. Without activation functions, the network would be limited to performing only linear transformations.<br/>
   
@@ -19,11 +19,11 @@ inside neural networks.<br />
   An activation function is typically represented by a function f(x) where x is the input
   to the neuron. Different activation functions have different equations. One commonly
   used activation function is the sigmoid function: 
-  <br/>![alt text](image-1.png)
+  <br/>![alt text](images\image-1.png)
 
   ### Graph:
   The sigmoid function graph is an S-shaped curve that smoothly transitions between 0 and 1 as the input varies from negative to positive infinity:
-  <br/>![alt text](image-2.png)
+  <br/>![alt text](images\image-2.png)
   <br/>
 
   ### o Discuss why activation functions are used in neural networks, focusing on the role of the Activation function.<br/>
@@ -40,9 +40,9 @@ inside neural networks.<br />
 
   ### o Derive the Activation function formula and demonstrate its output range.<br/>
   The primary role of the Activation Function is to transform the summed weighted input from the node into an output value to be fed to the next hidden layer or as output. 
-  <br/>![alt text](image-3.png)<br/>
+  <br/>![alt text](images\image-3.png)<br/>
   ### Elements of a Neural Networks Architecture:
-  <br/>![alt text](image-4.png)<br/>
+  <br/>![alt text](images\image-4.png)<br/>
   In the image above, you can see a neural network made of interconnected neurons. Each of them is characterized by its weight, bias, and activation function.<br/>
 
   **Here are other elements of this network.**<br/>
@@ -53,7 +53,26 @@ inside neural networks.<br />
 
   **3. Output Layer:** It’s the final layer of the network that brings the information learned through the hidden layer and delivers the final value as a result.<br/>
 
-  
+  📢 **Note:** All hidden layers usually use the same activation function. However, the output layer will typically use a different activation function from the hidden layers. The choice depends on the goal or type of prediction made by the model.
+
+  **Mathematical Exploration:**<br/>
+  **let’s understand what these derivatives are and how to calculate them:**<br/>
+  <br/>![alt text](images\image-5.PNG)<br/>
+
+  **1. Input layer**: Now from the image above, we can take raw input.
+
+  z(1) = W(1)X + b(1) a(1)
+
+Here,
+
+z(1) is the vectorized output of layer 1
+W(1) be the vectorized weights assigned to neurons of hidden layer i.e. w1, w2, w3 and w4
+X be the vectorized input features i.e. i1 and i2
+b is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2
+a(1) is the vectorized form of any linear function.
+
+
+
   o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.<br/>
   ### Different kind of activation functions:
 
