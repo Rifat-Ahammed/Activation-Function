@@ -101,25 +101,58 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image6.png)<br/>
 
-  **Equation:** Linear function has the equation similar to as of a straight line i.e. y = x.<br/>
+  **Equation:** Linear function has the equation similar to as of a straight line i.e. 
+    
+    y = x
+
   No matter how many layers we have, if all are linear in nature, the final activation function of last layer is nothing but just a linear function of the input of first layer.<br/>
-  **Range:** -inf to +inf.<br/>
+
+  **Range:** 
+    
+    -inf to +inf
+    
   **Uses:** Linear activation function is used at just one place i.e. output layer.<br/>
+
   **Issues:** If we will differentiate linear function to bring non-linearity, result will no more depend on input “x” and function will become constant, it won’t introduce any ground-breaking behavior to our algorithm.<br/>
+
 
 
   2. **Sigmoid Function:** 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image7.png)<br/>
 
   It is a function which is plotted as ‘S’ shaped graph.<br/>
-  **Equation:** A = 1/(1 + e^-x)<br/>
+  **Equation:** 
+    
+    A = 1/(1 + e^-x)<br/>
+
   **Nature:** Non-linear. Notice that X values lies between -2 to 2, Y values are very steep. This means, small changes in x would also bring about large changes in the value of Y.<br/>
-  **Range:** 0 to 1<br/>
+
+  **Range:** 
+    
+    0 to 1
+
   **Uses:** Usually used in output layer of a binary classification, where result is either 0 or 1, as value for sigmoid function lies between 0 and 1 only so, result can be predicted easily to be 1 if value is greater than 0.5 and 0 otherwise.<br/>
 
+  **3. Tanh Function:**
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image8.png)<br/>
+
+  The activation that works almost always better than sigmoid function is Tanh function also known as Tangent Hyperbolic function. It’s actually mathematically shifted version of the sigmoid function. Both are similar and can be derived from each other.
+
+  **Equation:**
+
+    f(x) = tanh(x = )
+
+  **Range :** 
   
+    -1 to +1
+
+  **Nature :** non-linear<br/>
+
+  **Uses :** Usually used in hidden layers of a neural network as it’s values lies between -1 to 1 hence the mean for the hidden layer comes out be 0 or very close to it, hence helps in centering the data by bringing mean close to 0. This makes learning for the next layer much easier.<br/>
+
+
   2. **ReLU (Rectified Linear Unit):** The ReLU activation function sets any negative input to 0 and retains positive inputs unchanged. This function has become widely popular in deep learning due to its computational efficiency and ability to avoid the vanishing gradient problem.<br/>
-  3. **Tanh (Hyperbolic Tangent):** The Tanh activation function maps its inputs to the range of -1 and 1, producing outputs with zero mean and unit variance. This makes it useful for normalizing the output of a neuron, which can improve the performance of the network.<br/>
+  
   4. **Softmax:** Softmax activation is typically used as the final activation function in a neural network for multiclass classification problems. It maps its inputs to a probability distribution over multiple classes.<br/>
   5. **Leaky ReLU:** It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).<br/>
   6. **Swish:** Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).<br/>
