@@ -19,11 +19,11 @@ inside neural networks.<br />
   An activation function is typically represented by a function f(x) where x is the input
   to the neuron. Different activation functions have different equations. One commonly
   used activation function is the sigmoid function: 
-  <br/>![alt text](images\image-1.png)
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-1.png)
 
   ### Graph:
   The sigmoid function graph is an S-shaped curve that smoothly transitions between 0 and 1 as the input varies from negative to positive infinity:
-  <br/>![alt text](images\image-2.png)
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-2.png)
   <br/>
 
   ### o Discuss why activation functions are used in neural networks, focusing on the role of the Activation function.<br/>
@@ -40,9 +40,9 @@ inside neural networks.<br />
 
   ### o Derive the Activation function formula and demonstrate its output range.<br/>
   The primary role of the Activation Function is to transform the summed weighted input from the node into an output value to be fed to the next hidden layer or as output. 
-  <br/>![alt text](images\image-3.png)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-3.png)<br/>
   ### Elements of a Neural Networks Architecture:
-  <br/>![alt text](images\image-4.png)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-4.png)<br/>
   In the image above, you can see a neural network made of interconnected neurons. Each of them is characterized by its weight, bias, and activation function.<br/>
 
   **Here are other elements of this network.**<br/>
@@ -57,7 +57,7 @@ inside neural networks.<br />
 
   **Mathematical Exploration:**<br/>
   **let’s understand what these derivatives are and how to calculate them:**<br/>
-  <br/>![alt text](images\image-5.PNG)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-5.PNG)<br/>
 
   **1. Input layer**: Now from the image above, we can take raw input.
   Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs w1, w2,...,wn
