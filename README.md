@@ -11,7 +11,7 @@ inside neural networks.<br />
 ## Theoretical Understanding:
   ### o Explain the Activation Function, including its equation and graph.<br/>
   ### Activation fucntion: 
-  <br/>![added images](images\image.PNG)<br/>
+  <br/>![added images](images\iamge7.PNG)<br/>
   An activation function in a neural network is a mathematical function applied to the output of a neuron or a layer of neurons. It determines the output or activation level of a neuron based on the weighted sum of its inputs.<br/>
   The purpose of an activation function is to introduce non-linear transformations to the network’s computations. Without activation functions, the network would be limited to performing only linear transformations.<br/>
   
@@ -60,15 +60,18 @@ inside neural networks.<br />
   <br/>![alt text](images\image-5.PNG)<br/>
 
   **1. Input layer**: Now from the image above, we can take raw input.
+  Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs w1, w2,...,wn
+  and produces an output z. Let's denote the weighted sum of inputs as b and the output of the activation function as a.
 
+  **Hidden layer i.e. layer 1:** <br/>
   **z(1) = W(1)X + b(1) a(1)**
 
   Here,
-  **z(1)** is the vectorized output of layer 1
-  **W(1)** be the vectorized weights assigned to neurons of hidden layer i.e. w1, w2, w3 and w4
-  **X** be the vectorized input features i.e. i1 and i2
-  **b** is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2
-  **a(1)** is the vectorized form of any linear function.
+  **z(1)** is the vectorized output of layer 1<br/>
+  **W(1)** be the vectorized weights assigned to neurons of hidden layer i.e. w1, w2, w3 and w4<br/>
+  **X** be the vectorized input features i.e. i1 and i2<br/>
+  **b** is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2<br/>
+  **a(1)** is the vectorized form of any linear function.<br/>
 
 
 
