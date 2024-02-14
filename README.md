@@ -21,6 +21,14 @@ inside neural networks.<br />
   used activation function is the sigmoid function: 
   <br/>![alt text](image-1.png)
 
+  <br/>There are several commonly used activation functions in neural networks, including:
+      1. Sigmoid: A sigmoid activation function maps any input to the range of 0 and 1, producing an output that can be interpreted as a probability.
+      2. ReLU (Rectified Linear Unit): The ReLU activation function sets any negative input to 0 and retains positive inputs unchanged. This function has become widely popular in deep learning due to its computational efficiency and ability to avoid the vanishing gradient problem.
+      3. Tanh (Hyperbolic Tangent): The Tanh activation function maps its inputs to the range of -1 and 1, producing outputs with zero mean and unit variance. This makes it useful for normalizing the output of a neuron, which can improve the performance of the network.
+      4. Softmax: Softmax activation is typically used as the final activation function in a neural network for multiclass classification problems. It maps its inputs to a probability distribution over multiple classes.
+      5. Leaky ReLU: It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).
+      6. Swish: Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).
+
 
 <br/>
 
