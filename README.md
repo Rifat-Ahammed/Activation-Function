@@ -140,7 +140,7 @@ Let,
 
   **Equation:**
 
-    f(x) = tanh(x = )
+    f(x) = tanh(x) = 2/(1+e^(-2x))-1
 
   **Range :** 
   
@@ -151,7 +151,25 @@ Let,
   **Uses :** Usually used in hidden layers of a neural network as it’s values lies between -1 to 1 hence the mean for the hidden layer comes out be 0 or very close to it, hence helps in centering the data by bringing mean close to 0. This makes learning for the next layer much easier.<br/>
 
 
-  2. **ReLU (Rectified Linear Unit):** The ReLU activation function sets any negative input to 0 and retains positive inputs unchanged. This function has become widely popular in deep learning due to its computational efficiency and ability to avoid the vanishing gradient problem.<br/>
+  **4. ReLU Function:**<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image9.png)<br/>
+
+  It Stands for Rectified linear unit. It is the most widely used activation function. Chiefly implemented in hidden layers of Neural network.
+
+  **Equation :**
+    
+     A(x) = max(0,x). 
+     It gives an output x if x is positive and 0 otherwise.
+
+  **Range :**
+    
+     [0, inf)
+
+  **Nature :** non-linear, which means we can easily backpropagate the errors and have multiple layers of neurons being activated by the ReLU function.<br/>
+
+  **Uses :** ReLu is less computationally expensive than tanh and sigmoid because it involves simpler mathematical operations. At a time only a few neurons are activated making the network sparse making it efficient and easy for computation.<br/>
+
+  **In simple words, RELU learns much faster than sigmoid and Tanh function.**
   
   4. **Softmax:** Softmax activation is typically used as the final activation function in a neural network for multiclass classification problems. It maps its inputs to a probability distribution over multiple classes.<br/>
   5. **Leaky ReLU:** It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).<br/>
