@@ -10,7 +10,7 @@ inside neural networks.<br />
 
 ## Theoretical Understanding:
   ### o Explain the Activation Function, including its equation and graph.<br/>
-  ### 1. Activation fucntion: 
+  ### Activation fucntion: 
   <br/>![alt text](image.png)<br/>
   An activation function in a neural network is a mathematical function applied to the output of a neuron or a layer of neurons. It determines the output or activation level of a neuron based on the weighted sum of its inputs.<br/>
   The purpose of an activation function is to introduce non-linear transformations to the network’s computations. Without activation functions, the network would be limited to performing only linear transformations.<br/>
@@ -22,11 +22,18 @@ inside neural networks.<br />
   <br/>![alt text](image-1.png)
 
   ### Graph:
-  The Sigmoid Function curve looks like a S-shape:
+  The sigmoid function graph is an S-shaped curve that smoothly transitions between 0 and 1 as the input varies from negative to positive infinity:
   <br/>![alt text](image-2.png)
   <br/>
 
   ### o Discuss why activation functions are used in neural networks, focusing on the role of the Activation function.<br/>
+  
+  ### Activation functions are used in neural networks for several reasons:<br/>
+  
+  1. Introducing non-linearity: Without activation functions, neural networks would simply be a series of linear transformations. However, many real-world problems are inherently non-linear, and thus require non-linear transformations to be effectively modeled. Activation functions introduce non-linearity into the output of each neuron, allowing neural networks to model more complex relationships between inputs and outputs.<br/>
+  2. Stabilizing gradients: When training a neural network using backpropagation, the gradients can become unstable and either vanish or explode. Activation functions can help to stabilize the gradients and make training more efficient.<br/>
+  3. Providing output range: Activation functions can restrict the output of a neuron to a certain range, such as between 0 and 1 for the sigmoid function or between -1 and 1 for the tanh function. This can be useful for certain types of problems, such as binary classification or regression with outputs bounded by certain limits.<br/>
+  4. Non-monotonic functions: Certain activation functions are non-monotonic, which means that they introduce local maxima and minima in the output of the neuron. This can help to prevent the network from getting stuck in local optima during training and improve its ability to find the global optimum.<br/>
 
   ### Different kind of activation functions:
 
