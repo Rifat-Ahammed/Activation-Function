@@ -99,7 +99,7 @@ Let,
 
   **1. Linear Function**
 
-    <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image6.png)
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image6.png)
 
   <br/>**Equation:** Linear function has the equation similar to as of a straight line i.e. y = x.<br/>
   No matter how many layers we have, if all are linear in nature, the final activation function of last layer is nothing but just a linear function of the input of first layer.<br/>
