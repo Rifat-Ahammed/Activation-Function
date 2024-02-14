@@ -203,6 +203,24 @@ Let,
 
   **Uses:** Leaky ReLU is an activation function used in artificial neural networks to introduce nonlinearity among the outputs between layers of a neural network.<br/>
 
+  **7. Swish Function:**
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/swish.png)<br/>
+
+  This function uses non-monotonicity, and may have influenced the proposal of other activation functions with this property such as Mish<br/>
+  **Equation:**
+
+    f(x)=x⋅sigmoid(βx) = x/(1+e^-βx) 
+    where β is a constant or trainable parameter.
+  
+  **Range:**
+
+    (0, 1)
+
+  **Nature:** Non Linear.<br/>
+
+  **Uses:** Swish activation is used in the Long Short-Term Memory (LTST) neural networks, which are used extensively in sequence prediction and likelihood problems.<br/>
+
+
   **Note:**
 
     1. The basic rule of thumb is if you really don’t know what activation function to use, then simply use RELU as it is a general activation function in hidden layers and is used in most cases these days.
@@ -210,13 +228,7 @@ Let,
     2. If your output is for binary classification then, sigmoid function is very natural choice for output layer.
 
     3. If your output is for multi-class classification then, Softmax is very useful to predict the probabilities of each classes. 
-
-
-
   
-  6. **Swish:** Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).<br/>
-
-
-<br/>
+  
 
 
