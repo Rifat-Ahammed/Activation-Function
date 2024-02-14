@@ -57,7 +57,7 @@ inside neural networks.<br />
 
   **Mathematical Exploration:**<br/>
   **let’s understand what these derivatives are and how to calculate them:**<br/>
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-5.PNG)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-5.png)<br/>
 
   **1. Input layer**: Now from the image above, we can take raw input.
   Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs w1, w2,...,wn
