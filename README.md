@@ -1,8 +1,8 @@
-# Activation-Function (Assignment_01) for Deep Learning
-Rifat_Assignment_01: Understanding and implementing the activation function.<br/>
+# Activation-Function for Deep Learning (Neural network).
+### Assignment_01(Rifat Ahammed): Understanding and implementing the activation function.<br/>
 Throughout this article we will learn about Activation Functions with real life example and also get answer that why they are needed and what their types.
 
-Objective:
+### Objective:
 1. To comprehend the conceptual and mathematics underpinnings of the Activation Function.
 2. To execute the Activation Function in a programming language (such as Python).
 3. The objective is to examine the attributes and consequences of using the Activation Function
@@ -30,26 +30,32 @@ inside neural networks.<br />
   
   ### Activation functions are used in neural networks for several reasons:<br/>
   
-  1. Introducing non-linearity: Without activation functions, neural networks would simply be a series of linear transformations. However, many real-world problems are inherently non-linear, and thus require non-linear transformations to be effectively modeled. Activation functions introduce non-linearity into the output of each neuron, allowing neural networks to model more complex relationships between inputs and outputs.<br/>
-  2. Stabilizing gradients: When training a neural network using backpropagation, the gradients can become unstable and either vanish or explode. Activation functions can help to stabilize the gradients and make training more efficient.<br/>
-  3. Providing output range: Activation functions can restrict the output of a neuron to a certain range, such as between 0 and 1 for the sigmoid function or between -1 and 1 for the tanh function. This can be useful for certain types of problems, such as binary classification or regression with outputs bounded by certain limits.<br/>
-  4. Non-monotonic functions: Certain activation functions are non-monotonic, which means that they introduce local maxima and minima in the output of the neuron. This can help to prevent the network from getting stuck in local optima during training and improve its ability to find the global optimum.<br/>
+  1. **Introducing non-linearity:** Without activation functions, neural networks would simply be a series of linear transformations. However, many real-world problems are inherently non-linear, and thus require non-linear transformations to be effectively modeled. Activation functions introduce non-linearity into the output of each neuron, allowing neural networks to model more complex relationships between inputs and outputs.<br/>
+  2. **Stabilizing gradients:** When training a neural network using backpropagation, the gradients can become unstable and either vanish or explode. Activation functions can help to stabilize the gradients and make training more efficient.<br/>
+  3. **Providing output range:** Activation functions can restrict the output of a neuron to a certain range, such as between 0 and 1 for the sigmoid function or between -1 and 1 for the tanh function. This can be useful for certain types of problems, such as binary classification or regression with outputs bounded by certain limits.<br/>
+  4. ***Non-monotonic functions:**  Certain activation functions are non-monotonic, which means that they introduce local maxima and minima in the output of the neuron. This can help to prevent the network from getting stuck in local optima during training and improve its ability to find the global optimum.<br/>
 
+
+  ## Mathematical Exploration:<br/>
+
+  ### o Derive the Activation function formula and demonstrate its output range.<br/>
+  The primary role of the Activation Function is to transform the summed weighted input from the node into an output value to be fed to the next hidden layer or as output. 
+  <br/>![alt text](image-3.png)<br/>
+
+  
+  o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.<br/>
   ### Different kind of activation functions:
 
   <br/>There are several commonly used activation functions in neural networks, including:<br/>
 
-  1. Sigmoid: A sigmoid activation function maps any input to the range of 0 and 1, producing an output that can be interpreted as a probability.<br/>
-  2. ReLU (Rectified Linear Unit): The ReLU activation function sets any negative input to 0 and retains positive inputs unchanged. This function has become widely popular in deep learning due to its computational efficiency and ability to avoid the vanishing gradient problem.<br/>
-  3. Tanh (Hyperbolic Tangent): The Tanh activation function maps its inputs to the range of -1 and 1, producing outputs with zero mean and unit variance. This makes it useful for normalizing the output of a neuron, which can improve the performance of the network.<br/>
-  4. Softmax: Softmax activation is typically used as the final activation function in a neural network for multiclass classification problems. It maps its inputs to a probability distribution over multiple classes.<br/>
-  5. Leaky ReLU: It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).<br/>
-  6. Swish: Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).<br/>
+  1. **Sigmoid:** A sigmoid activation function maps any input to the range of 0 and 1, producing an output that can be interpreted as a probability.<br/>
+  2. **ReLU (Rectified Linear Unit):** The ReLU activation function sets any negative input to 0 and retains positive inputs unchanged. This function has become widely popular in deep learning due to its computational efficiency and ability to avoid the vanishing gradient problem.<br/>
+  3. **Tanh (Hyperbolic Tangent):** The Tanh activation function maps its inputs to the range of -1 and 1, producing outputs with zero mean and unit variance. This makes it useful for normalizing the output of a neuron, which can improve the performance of the network.<br/>
+  4. **Softmax:** Softmax activation is typically used as the final activation function in a neural network for multiclass classification problems. It maps its inputs to a probability distribution over multiple classes.<br/>
+  5. **Leaky ReLU:** It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).<br/>
+  6. **Swish:** Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).<br/>
 
 
 <br/>
 
-## Mathematical Exploration:
-  o Derive the Activation function formula and demonstrate its output range.<br/>
-  o Calculate the derivative of the Activation function and explain its significance in the
-backpropagation process.<br/>
+
