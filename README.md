@@ -9,8 +9,8 @@ Objective:
 inside neural networks.<br />
 
 ## Theoretical Understanding:
-  o Explain the Activation Function, including its equation and graph.<br/>
-  1. Activation fucntion: 
+  ### o Explain the Activation Function, including its equation and graph.<br/>
+  ### 1. Activation fucntion: 
   <br/>![alt text](image.png)<br/>
   An activation function in a neural network is a mathematical function applied to the output of a neuron or a layer of neurons. It determines the output or activation level of a neuron based on the weighted sum of its inputs.<br/>
   The purpose of an activation function is to introduce non-linear transformations to the network’s computations. Without activation functions, the network would be limited to performing only linear transformations.<br/>
@@ -35,8 +35,7 @@ inside neural networks.<br />
 
 <br/>
 
-  o Discuss why activation functions are used in neural networks, focusing on the role of the
-   Activation function.<br/>
+  ### o Discuss why activation functions are used in neural networks, focusing on the role of the Activation function.<br/>
 ## Mathematical Exploration:
   o Derive the Activation function formula and demonstrate its output range.<br/>
   o Calculate the derivative of the Activation function and explain its significance in the
