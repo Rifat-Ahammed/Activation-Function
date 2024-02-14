@@ -171,7 +171,31 @@ Let,
 
   **In simple words, RELU learns much faster than sigmoid and Tanh function.**
   
-  4. **Softmax:** Softmax activation is typically used as the final activation function in a neural network for multiclass classification problems. It maps its inputs to a probability distribution over multiple classes.<br/>
+  **5. Softmax Function:**<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/Softmax.png)<br/>
+
+  The softmax function is also a type of sigmoid function but is handy when we are trying to handle multi- class classification problems.<br/>
+
+  **Equation :**
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/softmax1.PNG)<br/>
+
+
+  **Nature :** non-linear<br/>
+
+  **Uses :** Usually used when trying to handle multiple classes. the softmax function was commonly found in the output layer of image classification problems.The softmax function would squeeze the outputs for each class between 0 and 1 and would also divide by the sum of the outputs.<br/> 
+
+  **Output:** The softmax function is ideally used in the output layer of the classifier where we are actually trying to attain the probabilities to define the class of each input.<br/>
+
+  **Note:**
+
+    1. The basic rule of thumb is if you really don’t know what activation function to use, then simply use RELU as it is a general activation function in hidden layers and is used in most cases these days.
+
+    2. If your output is for binary classification then, sigmoid function is very natural choice for output layer.
+
+    3. If your output is for multi-class classification then, Softmax is very useful to predict the probabilities of each classes. 
+
+
+
   5. **Leaky ReLU:** It is similar to the ReLU function but allows a small gradient for negative inputs, preventing neurons from dying (example: outputting zero for all inputs).<br/>
   6. **Swish:** Swish is a recent activation function that has been shown to outperform ReLU on some tasks. It is defined as x * sigmoid(x).<br/>
 
