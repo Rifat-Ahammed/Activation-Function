@@ -6,7 +6,7 @@ Throughout this article we will learn about Activation Functions with real life 
 1. To comprehend the conceptual and mathematics underpinnings of the Activation Function.
 2. To execute the Activation Function in a programming language (such as Python).
 3. The objective is to examine the attributes and consequences of using the Activation Function
-inside neural networks.<br />
+inside neural networks.<br /> 
 
 ## Theoretical Understanding:
   ### o Explain the Activation Function, including its equation and graph.<br/>
@@ -61,15 +61,14 @@ inside neural networks.<br />
 
   **1. Input layer**: Now from the image above, we can take raw input.
 
-  z(1) = W(1)X + b(1) a(1)
+  **z(1) = W(1)X + b(1) a(1)**
 
-Here,
-
-z(1) is the vectorized output of layer 1
-W(1) be the vectorized weights assigned to neurons of hidden layer i.e. w1, w2, w3 and w4
-X be the vectorized input features i.e. i1 and i2
-b is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2
-a(1) is the vectorized form of any linear function.
+  Here,
+  **z(1)** is the vectorized output of layer 1
+  **W(1)** be the vectorized weights assigned to neurons of hidden layer i.e. w1, w2, w3 and w4
+  **X** be the vectorized input features i.e. i1 and i2
+  **b** is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2
+  **a(1)** is the vectorized form of any linear function.
 
 
 
