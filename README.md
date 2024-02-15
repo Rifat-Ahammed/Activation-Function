@@ -117,7 +117,7 @@ Let,
 
 
 
-  2. **Sigmoid Function:** 
+  **2. Sigmoid Function:** 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image7.png)<br/>
 
   It is a function which is plotted as ‘S’ shaped graph.<br/>
@@ -229,6 +229,46 @@ Let,
 
     3. If your output is for multi-class classification then, Softmax is very useful to predict the probabilities of each classes. 
   
-  
+  <br/>
+
+  **o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.**
+  <br/>
+
+  **1. Linear Activation Function:**<br/>
+
+  The linear activation function f(x) is defined as:
+
+    f(x)=x
+
+  **Derivative of Linear Activation Function:**<br/>
+
+  Since the linear activation function is simply f(x)=x, its derivative is a constant, which is always 1. Therefore, the derivative of the linear activation function 
+
+    f′(x)=1
+
+ **2. Sigmoid Function:**<br/>
+
+ The sigmoid function, also known as the logistic function, is a common activation function used in neural networks, particularly in binary classification tasks. It maps any real-valued number to the range [0, 1]. The sigmoid function is defined as:
+
+  $\large{f(x)}= \frac{1}{(1+e^{−x})}$
+
+  Where e is the base of the natural logarithm (approximately equal to 2.71828).<br/>
+
+  **Derivative of Sigmoid Function:**<br/>
+
+  The derivative of the sigmoid function f′(x) can be derived as follows:<br/>
+
+   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/sig_1.PNG)<br/>
+
+   So, the derivative of the sigmoid function f ′(x) is:<br/>
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/si4_1.PNG)<br/>
 
 
+
+## 3. Programming Exercise:
+  o Implement the Activation Activation Function in Python. Use the following prototype for
+  your function:
+  def Activation_Function_Name(x) :
+   Your implementation
+  o Create a small dataset or use an existing one to apply your function and visualize the results.
