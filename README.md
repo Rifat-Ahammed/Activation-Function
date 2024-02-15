@@ -286,7 +286,19 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_3.PNG)<br/>
   
+  **ReLU Function:**<br/>
 
+  The Rectified Linear Unit (ReLU) activation function is one of the most commonly used activation functions in neural networks. It's defined as:<br/>
+
+    f(x)=max(0,x)
+
+  **Derivative of ReLU Function:**<br/>
+
+  The ReLU function is piecewise linear, so its derivative is:<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/relu.PNG)<br/>
+ 
+​
+ 
 
 
   **Quotient Rule:**
