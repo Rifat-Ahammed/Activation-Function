@@ -262,7 +262,7 @@ Let,
 
    So, the derivative of the sigmoid function f ′(x) is:<br/>
 
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/si4_1.PNG)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/sig4_1.PNG)<br/>
 
 
 
