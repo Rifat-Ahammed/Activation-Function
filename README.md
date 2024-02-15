@@ -264,6 +264,37 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/sig_4.PNG)<br/>
 
+  **Tanh Function:**<br/>
+
+  The hyperbolic tangent (tanh) activation function is a common non-linear activation function used in neural networks. It squashes the input values to the range [-1, 1]. It's defined as: 
+
+  $\large{Tanh(x) = f(x)}= \frac{e^x-e^{-x}}{e^x+e^{−x}}$<br/>
+
+  Using **quotient rule** and **Euler’s identities** we can simplify it to:
+  
+  $\large{f(x)}= 1-(\frac{e^x-e^{-x}}{e^x+e^{−x}})^2$<br/>
+  <br/>
+  **Applying Euler’s identities:<br/>**
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_1.PNG)<br/>
+
+  Applying quotient rule to every term above, we have<br/>
+
+  ![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_2.PNG)<br/>
+
+  Putting all together we have
+  
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_2.PNG)<br/>
+  
+
+
+
+  **Quotient Rule:**
+
+  The quotient rule states that if u(x) and v(x) are differentiable functions, then the derivative of their quotient is given by:
+
+
+
 
 
 ## 3. Programming Exercise:
