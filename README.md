@@ -283,8 +283,8 @@ Let,
   ![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_2.PNG)<br/>
 
   Putting all together we have
-  
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_2.PNG)<br/>
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_3.PNG)<br/>
   
 
 
