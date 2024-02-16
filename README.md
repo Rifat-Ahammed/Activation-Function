@@ -443,3 +443,29 @@ Let,
   **Using Pie chart:** 
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/pie.PNG)<br/>
+
+  **nstallation:**
+
+  To execute this code, you need to install these two Python libraries. 
+
+    # For juoyter notebook, kaggle.
+    !pip install numpy
+    !pip install matplotlib
+
+  Note For *cmd*, *bash* or *Powershell* just use:
+
+    pip install numpy
+    pip install matplotlib
+
+  **Linux package manager:**<br/>
+
+  If you are using the Python version that comes with your Linux distribution, you can install Matplotlib via your package manager, e.g.:
+
+    Debian / Ubuntu: sudo apt-get install python3-matplotlib/numpy
+
+    Fedora: sudo dnf install python3-matplotlib/numpy
+
+    Red Hat: sudo yum install python3-matplotlib/numpy
+
+    Arch: sudo pacman -S python-matplotlib/numpy
+    
