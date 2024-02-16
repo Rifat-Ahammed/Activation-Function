@@ -9,10 +9,11 @@ Throughout this article we will learn about Activation Functions with real life 
 inside neural networks.<br /> 
 
 ## 1. Theoretical Understanding:
+
   ### o Explain the Activation Function, including its equation and graph.<br/>
 
   ### Activation fucntion: 
-  
+
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image.png)<br/>
   An activation function in a neural network is a mathematical function applied to the output of a neuron or a layer of neurons. It determines the output or activation level of a neuron based on the weighted sum of its inputs.<br/>
   The purpose of an activation function is to introduce non-linear transformations to the network’s computations. Without activation functions, the network would be limited to performing only linear transformations.<br/>
@@ -57,7 +58,8 @@ inside neural networks.<br />
 
   📢 **Note:** All hidden layers usually use the same activation function. However, the output layer will typically use a different activation function from the hidden layers. The choice depends on the goal or type of prediction made by the model.
 
-  **Mathematical Exploration:**<br/>
+  ### Mathematical Exploration:<br/>
+
   **let’s understand what these derivatives are and how to calculate them:**<br/>
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-5.png)<br/>
 
@@ -81,7 +83,7 @@ inside neural networks.<br />
     z(2) = W(2)a(1) + b(2) 
     a(2) = z(2)
 
-**Calculation at Output layer:**<br/>
+  **Calculation at Output layer:**<br/>
 
     z(2) = (W(2) * [W(1)X + b(1)]) + b(2)
     z(2) = [W(2) * W(1)] * X + [W(2)*b(1) + b(2)]
@@ -94,7 +96,7 @@ Let,
     Final output : z(2) = W*X + b
     which is again a linear function
 
-  o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.<br/>
+
   ### Different kind of activation functions and their output ranges:
 
   <br/>There are several commonly used activation functions in neural networks, including:<br/>
@@ -233,10 +235,10 @@ Let,
   
   <br/>
 
-  **o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.**
+  ### o Calculate the derivative of the Activation function and explain its significance in the backpropagation process.
   <br/>
 
-  **1. Linear Activation Function:**<br/>
+  **<ins>Linear Activation Function:<ins>**<br/>
 
   The linear activation function f(x) is defined as:
 
@@ -248,9 +250,9 @@ Let,
 
     f′(x)=1
 
- **2. Sigmoid Function:**<br/>
+ **<ins>Sigmoid Function:<ins>**<br/>
 
- The sigmoid function, also known as the logistic function, is a common activation function used in neural networks, particularly in binary classification tasks. It maps any real-valued number to the range [0, 1]. The sigmoid function is defined as:
+  The sigmoid function, also known as the logistic function, is a common activation function used in neural networks, particularly in binary classification tasks. It maps any real-valued number to the range [0, 1]. The sigmoid function is defined as:
 
   $\large{f(x)}= \frac{1}{(1+e^{−x})}$
 
@@ -266,7 +268,7 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/sig_4.PNG)<br/>
 
-  **Tanh Function:**<br/>
+  **<ins>Tanh Function:<ins>**<br/>
 
   The hyperbolic tangent (tanh) activation function is a common non-linear activation function used in neural networks. It squashes the input values to the range [-1, 1]. It's defined as: 
 
@@ -288,7 +290,7 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/tanh_3.PNG)<br/>
   
-  **ReLU Function:**<br/>
+  **<ins>ReLU Function:<ins>**<br/>
 
   The Rectified Linear Unit (ReLU) activation function is one of the most commonly used activation functions in neural networks. It's defined as:<br/>
 
@@ -299,7 +301,7 @@ Let,
   The ReLU function is piecewise linear, so its derivative is:<br/>
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/relu.PNG)<br/>
  
- **Softmax Function:**<br/>
+ **<ins>Softmax Function:<ins>**<br/>
 
   The softmax function is commonly used in the output layer of a neural network for multi-class classification tasks. It takes a vector of real-valued scores (often called logits) as input and outputs a probability distribution over multiple classes. The softmax function is defined as follows:
 
@@ -328,7 +330,8 @@ Let,
 
   <br/>
 
-  **Leaky ReLU:**
+  **<ins>Leaky ReLU:<ins>**<br/>
+
   The Leaky ReLU activation function is a variant of the traditional ReLU function. It addresses the issue of "dying ReLU" neurons that can occur when the input to a ReLU neuron is consistently negative, causing the neuron to always output zero.
 
   The Leaky ReLU function is defined as follows:
@@ -343,7 +346,7 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/R_ReLU1.PNG)<br/>
 
-  **Swish Function:**<br/>
+  **<ins>Swish Function:<ins>**<br/>
 
   The Swish activation function was proposed by researchers at Google in 2017 as an alternative to other activation functions like ReLU. It is defined as:
 
@@ -365,11 +368,10 @@ Let,
           = sigmoid(x) + x⋅sigmoid(x)⋅(1−sigmoid(x))
           = sigmoid(x) + x⋅f(x)⋅(1−sigmoid(x))
 ​
- 
   Where, f(x) is the output of the Swish function.
   <br/>
 
-  **Significance in Backpropagation:**
+  ### <ins>Significance in Backpropagation:<ins>
 
   **Gradient Calculation:** The derivative of the activation function is used to compute the gradient of the loss function with respect to the output of each neuron in the network. This gradient is then backpropagated through the network to update the weights.
 
@@ -382,47 +384,54 @@ Let,
   **o Implement the Activation Activation Function in Python. Use the following prototype for your function:**
 
     def Activation_Function_Name(x) :
+
     # Your implementation
 
   **Linear Function:**<br/>
 
     def linear(x):
-    return x
+
+      return x
 
   **Sigmoid Function:**
 
     def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
+
+      return 1 / (1 + np.exp(-x))
 
   **Tanh Function:**
 
     def tanh(x):
-    return np.tanh(x)
+
+      return np.tanh(x)
 
   **ReLU Function:**
 
     def relu(x):
-    return np.maximum(0, x)
+
+      return np.maximum(0, x)
 
   **Softmax Function:**
 
     def softmax(x):
 
-    # Subtracting the maximum value for numerical stability
-    exp_scores = np.exp(x - np.max(x))  
-    return exp_scores / np.sum(exp_scores)
+      # Subtracting the maximum value for numerical stability
+      exp_scores = np.exp(x - np.max(x))  
+      return exp_scores / np.sum(exp_scores)
 
   **Leaky ReLU Function:**
 
     def leaky_relu(x, alpha=0.01):
-    return np.where(x > 0, x, alpha * x)
+
+      return np.where(x > 0, x, alpha * x)
 
   **Swish Function:**
 
     def swish(x):
-    return x * sigmoid(x)
 
-  **o Create a small dataset or use an existing one to apply your function and visualize the results.**
+      return x * sigmoid(x)
+
+  ### o Create a small dataset or use an existing one to apply your function and visualize the results.
 
   **Generate a dataset for Ativation functions:**
 
@@ -446,7 +455,7 @@ Let,
 
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/pie.PNG)<br/>
 
-  **<ins>Installation:<ins>**
+  ### <ins>Installation:<ins>
 
   To execute this code, you need to install these two Python libraries. 
 
@@ -454,12 +463,12 @@ Let,
     !pip install numpy
     !pip install matplotlib
 
-  Note For *cmd*, *bash* or *Powershell* just use:
+  Note, For *cmd*, *bash* or *Powershell* :
 
     pip install numpy
     pip install matplotlib
 
-  **Linux package manager:**<br/>
+  ### <ins> Linux package manager:<ins><br/>
 
   If you are using the Python version that comes with your Linux distribution, you can install Matplotlib via your package manager, e.g.:
 
@@ -473,7 +482,7 @@ Let,
 
 ## 4. Analysis:
 
-  **o Analyze the advantages and disadvantages of using the Activation Function in neural networks.**<br/>
+  ### o Analyze the advantages and disadvantages of using the Activation Function in neural networks.<br/>
 
   Activation functions are the lifeblood of neural networks, introducing non-linearity and enabling learning. However, they present a double-edged sword, offering advantages while introducing potential drawbacks.<br/>
 
@@ -504,11 +513,11 @@ Let,
   5. **Complexity and Computation**: Certain activation functions, particularly those involving exponential or trigonometric operations (e.g., softmax, tanh), can be computationally expensive, especially when dealing with large datasets or deep architectures. This can increase training time and resource requirements.
   Choosing the right activation function requires careful consideration of these advantages and disadvantages, ensuring your neural network unlocks its full potential.<br/>
 
-  <br/>**o Discuss the impact of the Activation function on gradient descent and the problem of vanishing gradients.**<br>
+  ### <br/>o Discuss the impact of the Activation function on gradient descent and the problem of vanishing gradients.**<br>
 
   The choice of activation function has a significant impact on gradient descent, the optimization algorithm commonly used to train neural networks. Activation functions influence the gradient flow during backpropagation, which is vital  for updating the network's parameters to minimize the loss function. The problem of vanishing gradients is particularly relevant in this context, as it can hinder the training process by causing gradients to become extremely small, slowing down or preventing learning in deep neural networks.
 
-   **<ins>Impact on Gradient Descent:<ins>**<br/>
+   ### <ins>Impact on Gradient Descent:<ins><br/>
 
   **WHAT IS GRADIENT DESCENT IN MACHINE LEARNING?**<br/>
 
@@ -526,7 +535,7 @@ Let,
   **Stability of Training:** Activation functions also impact the stability of training by affecting the dynamics of gradient descent. Properly chosen activation functions ensure that gradients neither vanish nor explode too quickly, allowing for stable and efficient training.<br/>
 
 
-  **Problem of Vanishing Gradients:**<br/>
+  ### Problem of Vanishing Gradients:<br/>
 
   Before we can understand why the problem of vanishing gradients exists, we should have some understanding of the equations of the backpropagation algorithm.<br/>
 
@@ -534,7 +543,7 @@ Let,
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/backpropagation.PNG)<br/>
   http://neuralnetworksanddeeplearning.com/chap2.html
 
-    Observations:
+  **Observations:**
 
     1. From equation 1&2 we can see that the error in the output layer depends on the derivative of the activation function.
 
