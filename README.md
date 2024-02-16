@@ -345,7 +345,7 @@ Let,
 
   The Swish activation function was proposed by researchers at Google in 2017 as an alternative to other activation functions like ReLU. It is defined as:
 
-      f(x)=x⋅sigmoid(x)
+      f(x) = x⋅sigmoid(x)
 
   Where sigmoid(x) is the sigmoid function:
 
@@ -502,5 +502,57 @@ Let,
   5. **Complexity and Computation**: Certain activation functions, particularly those involving exponential or trigonometric operations (e.g., softmax, tanh), can be computationally expensive, especially when dealing with large datasets or deep architectures. This can increase training time and resource requirements.
   Choosing the right activation function requires careful consideration of these advantages and disadvantages, ensuring your neural network unlocks its full potential.<br/>
 
-  <br/>**o Discuss the impact of the Activation function on gradient descent and the problem of vanishing gradients.**
+  <br/>**o Discuss the impact of the Activation function on gradient descent and the problem of vanishing gradients.**<br>
+
+  The choice of activation function has a significant impact on gradient descent, the optimization algorithm commonly used to train neural networks. Activation functions influence the gradient flow during backpropagation, which is vital  for updating the network's parameters to minimize the loss function. The problem of vanishing gradients is particularly relevant in this context, as it can hinder the training process by causing gradients to become extremely small, slowing down or preventing learning in deep neural networks.
+
+   **<ins>Impact on Gradient Descent:<ins>**<br/>
+
+  **WHAT IS GRADIENT DESCENT IN MACHINE LEARNING?**<br/>
+
+  Gradient Descent is an optimization algorithm for finding a local minimum of a differentiable function. Gradient descent in machine learning is simply used to find the values of a function's parameters (coefficients) that minimize a cost function as far as possible.<br/>
+
+  **"A gradient measures how much the output of a function changes if you change the inputs a little bit." — Lex Fridman (MIT)**<br/>
+
+  **Gradient Calculation:** The activation function determines the form of the derivative that is used to compute gradients during backpropagation. The derivative of the activation function affects how information flows backward through the network, influencing the magnitude and direction of gradients at each layer.<br/>
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/gradient.png)<br/>
+
+
+  **Gradient Vanishing or Exploding:** Some activation functions, such as sigmoid and hyperbolic tangent (tanh), are prone to the problem of vanishing or exploding gradients. When gradients become extremely small (vanish) or large (explode), it becomes challenging for the optimization algorithm to update the network's parameters effectively, leading to slow convergence or numerical instability.<br/>
+
+  **Stability of Training:** Activation functions also impact the stability of training by affecting the dynamics of gradient descent. Properly chosen activation functions ensure that gradients neither vanish nor explode too quickly, allowing for stable and efficient training.<br/>
+
+
+  **Problem of Vanishing Gradients:**<br/>
+
+  Before we can understand why the problem of vanishing gradients exists, we should have some understanding of the equations of the backpropagation algorithm.<br/>
+
+  **Backpropagation algorithm:**<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/backpropagation.PNG)<br/>
+  http://neuralnetworksanddeeplearning.com/chap2.html
+
+    Observations:
+
+    1. From equation 1&2 we can see that the error in the output layer depends on the derivative of the activation function.
+
+    2. From equation 2 we can observe that the error in the previous/hidden layer is proportional to the weights, the error from the outer layers and the derivative of the activation function. The error from outer layers is in turn dependent on the derivative of the activation function of its layer.
+
+    3. From equation 1,2 &4 we can conclude that the gradients for weights for any layer are dependent on the product of derivatives of the activation layers.
   
+  **What is the problem of Vanishing gradients?**<br/>
+
+  Consider the graph of sigmoid function and it’s derivative. Observe that for very large values for sigmoid function the derivative takes a very low value. If the neural network has many hidden layers, the gradients in the earlier layers will become very low as we multiply the derivatives of each layer. As a result, learning in the earlier layers becomes very slow.<br/>
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/V_p.PNG)<br/>
+
+  On the other hand, the derivative of the RELU function is either zero or 1. Even if we multiply the derivatives for many layers, there will be no degradation unlike the case of the sigmoid function (assuming that RELU is not operating in the dead-region). However, if you carefully look at equation 2, the error signal is also dependent on the weights of the network. If the weights of the network are constantly below zero, the gradients will diminish slowly.<br/>
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/V_p1.PNG)<br/>
+
+  **Depth of Networks:** Deep neural networks with many layers are particularly susceptible to the vanishing gradient problem. As gradients propagate backward through multiple layers, they can become exponentially smaller, especially when using activation functions with derivatives that approach zero (e.g., sigmoid).
+
+  **Learning Long-range Dependencies:** The vanishing gradient problem can hinder the network's ability to learn long-range dependencies in the data, as gradients may become too small to effectively update parameters in earlier layers. This can limit the expressive power of deep architectures and lead to poor performance on tasks that require capturing distant relationships.
+
+  **Training Time and Resource Requirements:** In the presence of vanishing gradients, training deep neural networks may require more time and computational resources. Researchers often resort to techniques like careful weight initialization, gradient clipping, or using alternative activation functions to mitigate the impact of vanishing gradients.
+
