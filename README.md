@@ -305,7 +305,7 @@ Let,
   $p_i$
   for each class i as:
 
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/softmax.PNG)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/sotmax.PNG)<br/>
 
   Where:
 
@@ -340,7 +340,7 @@ Let,
   The derivative of the Leaky ReLU functionf′(x) is computed as follows:
 
    <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/R_ReLU1.PNG)<br/>
-   
+
 
 
 ## 3. Programming Exercise:
