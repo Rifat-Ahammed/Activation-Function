@@ -61,10 +61,10 @@ inside neural networks.<br />
   ### Mathematical Exploration:<br/>
 
   **let’s understand what these derivatives are and how to calculate them:**<br/>
-  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/image-5.png)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/crop_NN.jpg)<br/>
 
   **1. Input layer**:<br/>
-    Now from the image above, we can take raw input.Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs i.e. i1, i2,...,in and produces an output z.
+    Now from the image above, we can take raw input.Consider a neural network with a single neuron layer. Each neuron in this layer takes inputs i.e. x1, x2,....xn and produces an output z.
 
   **Hidden layer (layer 1):** <br/>
 
@@ -72,7 +72,7 @@ inside neural networks.<br />
     Here,
     z(1) is the vectorized output of layer 1
     W(1) be the vectorized weight assigned to neurons of hidden layer i.e. w1, w2, w3 and w4
-    X be the vectorized input features i.e. i1 and i2
+    X be the vectorized input features i.e. x1 and x2
     b is the vectorized bias assigned to neurons in hidden layer i.e. b1 and b2
     a(1) is the vectorized form of any linear function.<br/>
 
