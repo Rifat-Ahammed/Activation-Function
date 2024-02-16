@@ -339,13 +339,107 @@ Let,
 
   The derivative of the Leaky ReLU functionf′(x) is computed as follows:
 
-   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/R_ReLU1.PNG)<br/>
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/R_ReLU1.PNG)<br/>
 
+  **Swish Function:**<br/>
 
+  The Swish activation function was proposed by researchers at Google in 2017 as an alternative to other activation functions like ReLU. It is defined as:
 
-## 3. Programming Exercise:
-  o Implement the Activation Activation Function in Python. Use the following prototype for
-  your function:
-  def Activation_Function_Name(x) :
-   Your implementation
-  o Create a small dataset or use an existing one to apply your function and visualize the results.
+      f(x)=x⋅sigmoid(x)
+
+  Where sigmoid(x) is the sigmoid function:
+
+  $\large{sigmoid(x)} = \frac{1}{1+e^{-x}}$
+  <br/>
+
+  **Derivative of Swish Function:**
+  <br/>
+
+  To find the derivative f′(x) of the Swish function, we can use the product rule:
+    
+    f′(x) = (x⋅sigmoid(x))′
+          = x′⋅sigmoid(x) + x⋅sigmoid′(x)
+          = sigmoid(x) + x⋅sigmoid′(x)
+          = sigmoid(x) + x⋅sigmoid(x)⋅(1−sigmoid(x))
+          = sigmoid(x) + x⋅f(x)⋅(1−sigmoid(x))
+​
+ 
+  Where, f(x) is the output of the Swish function.
+  <br/>
+
+  **Significance in Backpropagation:**
+
+  **Gradient Calculation:** The derivative of the activation function is used to compute the gradient of the loss function with respect to the output of each neuron in the network. This gradient is then backpropagated through the network to update the weights.
+
+  **Weight Update:** In the backpropagation algorithm, the derivative of the activation function is multiplied with the error signal to compute the gradient of the loss function with respect to the weights. This gradient is used to update the weights of the network, thereby minimizing the error.
+
+  **Non-linearity:** Activation functions introduce non-linearity into the network, allowing it to learn complex patterns in the data. The derivative of the activation function ensures that this non-linearity is preserved during the backpropagation process, enabling the network to learn and adapt effectively.<br/>
+
+## 3. Programming Exercise:<br/>
+
+  **o Implement the Activation Activation Function in Python. Use the following prototype for your function:**
+
+    def Activation_Function_Name(x) :
+    # Your implementation
+
+  **Linear Function:**<br/>
+
+    def linear(x):
+    return x
+
+  **Sigmoid Function:**
+
+    def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+  **Tanh Function:**
+
+    def tanh(x):
+    return np.tanh(x)
+
+  **ReLU Function:**
+
+    def relu(x):
+    return np.maximum(0, x)
+
+  **Softmax Function:**
+
+    def softmax(x):
+
+    # Subtracting the maximum value for numerical stability
+    exp_scores = np.exp(x - np.max(x))  
+    return exp_scores / np.sum(exp_scores)
+
+  **Leaky ReLU Function:**
+
+    def leaky_relu(x, alpha=0.01):
+    return np.where(x > 0, x, alpha * x)
+
+  **Swish Function:**
+
+    def swish(x):
+    return x * sigmoid(x)
+
+  **o Create a small dataset or use an existing one to apply your function and visualize the results.**
+
+  **Generate a dataset for Ativation functions:**
+
+    # Generate input data
+    x = np.linspace(-5, 5, 100)
+
+    # Apply each activation function to the input data
+    linear_output = linear(x)
+    sigmoid_output = sigmoid(x)
+    tanh_output = tanh(x)
+    relu_output = relu(x)
+    softmax_output = softmax(x)
+    leaky_relu_output = leaky_relu(x)
+    swish_output = swish(x)
+
+ **Using Graph:**
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/active.PNG)<br/>
+
+  **Using Pie chart:** 
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/pie.PNG)<br/>
