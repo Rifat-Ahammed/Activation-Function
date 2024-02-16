@@ -297,16 +297,50 @@ Let,
   The ReLU function is piecewise linear, so its derivative is:<br/>
   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/relu.PNG)<br/>
  
-​
- 
+ **Softmax Function:**<br/>
 
+  The softmax function is commonly used in the output layer of a neural network for multi-class classification tasks. It takes a vector of real-valued scores (often called logits) as input and outputs a probability distribution over multiple classes. The softmax function is defined as follows:
 
-  **Quotient Rule:**
+  Given a vector z of length K (where K is the number of classes), the softmax function computes the probabilities 
+  $p_i$
+  for each class i as:
 
-  The quotient rule states that if u(x) and v(x) are differentiable functions, then the derivative of their quotient is given by:
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/softmax.PNG)<br/>
 
+  Where:
 
+  1. e is the base of the natural logarithm (Euler's number).
+  2. $(z_i)$ is the i-th element of the input vector z.
+  3. The denominator is the sum of exponentials of all elements in the input vector, which ensures that the output is a valid probability distribution (i.e., the probabilities sum up to 1).
 
+  Here's the simplified expression for the gradient of the cross-entropy loss with respect to the logits, which effectively incorporates the derivative of the softmax function:<br/>
+
+  $\large\frac{∂Loss}{∂z_i}= \vec{y_i}−y_i$<br/>
+
+  Where:<br/>
+
+  1. $\vec{y_i}$ is the predicted probability (output of the softmax function) for class *i*.
+
+  2. ${y_i}$ is the true label (one-hot encoded) for class *i*.<br/>
+  3. ${z_i}$ is the input logit for class *i*.
+
+  <br/>
+
+  **Leaky ReLU:**
+  The Leaky ReLU activation function is a variant of the traditional ReLU function. It addresses the issue of "dying ReLU" neurons that can occur when the input to a ReLU neuron is consistently negative, causing the neuron to always output zero.
+
+  The Leaky ReLU function is defined as follows:
+
+  <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/L_ReLU.PNG)<br/>
+
+  Where α is a small constant (typically around 0.01) called the "leak" coefficient.
+
+  **Derivative of Leaky ReLU Function:**
+
+  The derivative of the Leaky ReLU functionf′(x) is computed as follows:
+
+   <br/>![alt text](https://github.com/Rifat-Ahammed/Activation-Function/blob/main/images/R_ReLU1.PNG)<br/>
+   
 
 
 ## 3. Programming Exercise:
